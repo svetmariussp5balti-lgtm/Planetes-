@@ -49,21 +49,19 @@
                     <br/><br/>
 
                     <b>Написать нам: </b>
-                    <a href="mailto:cosmos@example.com">cosmos@example.com</a>
+                    <a href="mailto:svet.marius.sp5balti@gmail.com">svet.marius.sp5balti@gmail.com</a>
                 </div>
             </div>
 
             <div class="col-50">
-                <form class="cform">
+                <form action="https://formspree.io/f/mqaebrda" method="POST" class="cform">
                     <h2 class="centered">Обратная связь</h2>
 
-                    <input type="text" placeholder="Ваше имя">
-                    <input type="email" placeholder="Ваш email">
+                    <input type="text" name="name" placeholder="Ваше имя" required>
+                    <input type="email" name="email" placeholder="Ваш email" required>
+                    <input type="tel" name="phone" placeholder="Ваш телефон">
 
-                    
-                    <input type="tel" placeholder="Ваш телефон">
-
-                    <textarea rows="5" placeholder="Ваше сообщение"></textarea>
+                    <textarea name="message" rows="5" placeholder="Ваше сообщение" required></textarea>
 
                     <input type="submit" value="Отправить">
                 </form>
