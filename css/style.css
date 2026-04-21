@@ -1,0 +1,269 @@
+/* <!-- Подключение шрифтов --> */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); /* подключает 2 шрифта */
+
+* {
+    box-sizing: border-box; /* включает padding и border в размер */
+}
+
+/* <!-- Основные настройки страницы --> */
+body {
+    margin: 0; /* убирает отступы */
+    font-family: "Montserrat", sans-serif; /* основной шрифт */
+    font-size: 17px; /* размер текста */
+    background-color: #0a0a1a; /* тёмный фон */
+    color: #cdd8f0; /* цвет текста */
+}
+
+/* <!-- Главный контейнер --> */
+main {
+    min-height: 100vh; /* минимум высота = экран */
+}
+
+/* <!-- Шапка сайта --> */
+header {
+    background: #0d1b3e; /* цвет фона */
+    position: fixed; /* фиксируется сверху */
+    width: 100%; /* на всю ширину */
+    top: 0; /* сверху */
+    padding: 10px 15px 5px 15px; /* отступы */
+    border-bottom: 2px solid #1a3a7a; /* линия снизу */
+}
+
+/* <!-- Навигация --> */
+navbar {
+    margin-left: 30px; /* отступ слева */
+    margin-bottom: 10px; /* отступ снизу */
+    display: inline-block; /* строчно-блочный */
+    overflow: auto; /* контроль переполнения */
+}
+
+navbar a {
+    color: white; /* цвет текста */
+    text-decoration: none; /* без подчёркивания */
+    margin-right: 20px; /* отступ справа */
+    font-size: 20px; /* размер */
+}
+
+/* <!-- Эффект при наведении --> */
+navbar a:hover {
+    color: #7ab8ff; /* цвет при наведении */
+    text-decoration: underline 1px; /* подчёркивание */
+}
+
+/* <!-- Подвал --> */
+footer {
+    min-height: 80px; /* высота */
+    background: #0d1b3e; /* фон */
+    text-align: center; /* центр текста */
+    color: white; /* цвет */
+    padding-top: 35px; /* отступ */
+    border-top: 2px solid #1a3a7a; /* линия сверху */
+}
+
+/* <!-- Абзацы --> */
+p {
+    line-height: 150%; /* расстояние между строками */
+    text-indent: 30px; /* отступ первой строки */
+}
+
+/* <!-- Список --> */
+li {
+    margin-top: 10px; /* отступ сверху */
+    padding-left: 15px; /* отступ слева */
+}
+
+/* <!-- Заголовки --> */
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0; /* убирает отступ */
+    font-family: "Dancing Script", cursive; /* красивый шрифт */
+    color: white; /* цвет */
+}
+
+/* <!-- Заголовок h1 --> */
+h1 {
+    font-size: 270%; /* размер */
+}
+
+/* <!-- Заголовок h2 --> */
+h2 {
+    font-size: 200%; /* размер */
+}
+
+/* <!-- Секции --> */
+section {
+    padding: 90px 15%; /* внутренние отступы */
+}
+
+/* <!-- Логотип --> */
+.logo {
+    height: 50px; /* высота */
+}
+
+/* <!-- Главный экран --> */
+#index {
+    background: linear-gradient(hsla(230, 80%, 5%, 0.7), #000010cc), url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/The_Blue_Marble_%28remastered%29.jpg/600px-The_Blue_Marble_%28remastered%29.jpg'); /* фон + картинка */
+    background-size: cover; /* растягивает */
+    background-position: center; /* центрирует */
+    min-height: 100vh; /* высота */
+}
+
+/* <!-- Текст на главной --> */
+.index-info {
+    margin-top: 25vh; /* отступ сверху */
+    text-align: center; /* центр */
+}
+
+/* <!-- Заголовок на главной --> */
+.index-info h1 {
+    font-size: 350%; /* размер */
+    color: white; /* цвет */
+    border: 2px solid #3a6abf; /* рамка */
+    display: inline-block; /* формат */
+    padding: 20px; /* отступ */
+    border-radius: 5px; /* скругление */
+    background-color: hsla(220, 60%, 15%, 0.6); /* фон */
+}
+
+/* <!-- Ссылка --> */
+.link-index {
+    color: white; /* цвет */
+    text-decoration: underline #7ab8ff 2px; /* подчёркивание */
+    font-size: 20px; /* размер */
+}
+
+.link-index:hover {
+    color: #7ab8ff; /* цвет при наведении */
+}
+
+/* <!-- Планета блок --> */
+.planet {
+    overflow: auto; /* фикс float */
+    border-bottom: 3px #3a6abf dashed; /* линия */
+    margin-bottom: 10px; /* отступ */
+}
+
+/* <!-- Картинка планеты --> */
+.planet img {
+    height: 23vh; /* высота */
+    width: 23vh; /* ширина */
+    object-fit: cover; /* обрезка */
+    border-radius: 50%; /* круг */
+    float: left; /* обтекание */
+    margin-right: 15px; /* отступ */
+    margin-bottom: 15px; /* отступ */
+}
+
+/* <!-- Видео --> */
+.vframe {
+    width: 100%; /* ширина */
+    height: 30vw; /* высота */
+    border: 2px solid #3a6abf; /* рамка */
+    border-radius: 5px; /* скругление */
+}
+
+/* <!-- Строка --> */
+.row {
+    overflow: auto; /* фикс */
+}
+
+/* <!-- Колонки --> */
+[class^="col-"] {
+    float: left; /* влево */
+    padding: 0px 10px; /* отступ */
+}
+
+/* <!-- Колонка 50% --> */
+.col-50 {
+    width: 50%; /* половина */
+}
+
+/* <!-- Контакты --> */
+.contacte {
+    border: 2px solid #3a6abf; /* рамка */
+    border-radius: 5px; /* скругление */
+    background-color: hsla(220, 40%, 15%, 0.5); /* фон */
+    padding: 5px 5%; /* отступ */
+    height: 330px; /* высота */
+    margin-bottom: 15px; /* отступ */
+}
+
+/* <!-- Форма --> */
+.cform {
+    border: 2px solid #3a6abf; /* рамка */
+    border-radius: 5px; /* скругление */
+    background-color: hsla(220, 40%, 15%, 0.5); /* фон */
+    padding: 5px 5%; /* отступ */
+}
+
+/* <!-- Поля ввода --> */
+.cform input, .cform textarea {
+    width: 100%; /* ширина */
+    font-size: 15px; /* размер */
+    font-family: inherit; /* наследует шрифт */
+    margin-bottom: 10px; /* отступ */
+    padding: 4px 6px; /* отступ */
+    background: #0a0a1a; /* фон */
+    border: 1px solid #3a6abf; /* рамка */
+    color: #cdd8f0; /* цвет текста */
+}
+
+/* <!-- Бургер меню --> */
+#hamburger {
+    color: white; /* цвет */
+    font-size: 28px; /* размер */
+    position: absolute; /* позиция */
+    right: 22px; /* справа */
+    top: 24px; /* сверху */
+    cursor: pointer; /* курсор */
+    display: none; /* скрыт */
+}
+
+/* <!-- Центрирование --> */
+.centered {
+    text-align: center; /* центр */
+}
+
+/* <!-- Адаптив --> */
+@media (max-width: 800px) {
+    body {
+        font-size: 16px; /* меньше текст */
+    }
+
+    section {
+        padding: 90px 10px; /* меньше отступ */
+    }
+
+    .index-info h1 {
+        font-size: 250%; /* меньше */
+    }
+
+    .vframe {
+        height: 55vw; /* выше */
+    }
+
+    [class^="col-"] {
+        width: 100% !important; /* на всю ширину */
+    }
+
+    navbar {
+        display: block; /* показать */
+        margin-left: 0; /* убрать отступ */
+        margin-top: 10px; /* добавить сверху */
+    }
+
+    navbar a {
+        display: none; /* скрыть */
+        margin-right: 0; /* убрать отступ */
+        padding: 10px 0; /* отступ */
+        width: 100%; /* ширина */
+    }
+
+    navbar.mobile a {
+        display: block; /* показать */
+        text-align: center; /* центр */
+    }
+
+    #hamburger {
+        display: block; /* показать */
+    }
+}
